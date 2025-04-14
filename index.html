@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-Page Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <!-- Pages/Slides -->
+      <div class="page active" id="page1">
+        <div class="content">
+          <img src="./1.png" />
+          <a target="_blank" href="./bankist-login/index.html">Bankist Login Project</a>
+        </div>
+      </div>
+
+      <div class="page" id="page2">
+        <div class="content">
+          <img src="./2.png" />
+          <a target="_blank" href="./bankist/index.html">Bankist Project</a>
+        </div>
+      </div>
+
+      <div class="page" id="page3">
+        <div class="content">
+          <img src="./3.png" />
+          <a target="_blank" href="./guess-my-number/index.html">Guess my number Project</a>
+        </div>
+      </div>
+      <div class="page" id="page4">
+        <div class="content">
+          <img src="./4.png" />
+          <a target="_blank" href="./modal-window/index.html">Modal window Project</a>
+        </div>
+      </div>
+
+      <div class="page" id="page5">
+        <div class="content">
+          <img src="./5.png" />
+          <a target="_blank" href="./pig-game/index.html">Pig game Project</a>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="nav-button prev-button" aria-label="Previous page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <button class="nav-button next-button" aria-label="Next page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Page Indicators -->
+      <div class="page-indicators">
+        <button class="indicator active" data-page="0" aria-label="Go to page 1"></button>
+        <button class="indicator" data-page="1" aria-label="Go to page 1/5"></button>
+        <button class="indicator" data-page="2" aria-label="Go to page 2"></button>
+        <button class="indicator" data-page="3" aria-label="Go to page 3"></button>
+        <button class="indicator" data-page="4" aria-label="Go to page 4"></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
